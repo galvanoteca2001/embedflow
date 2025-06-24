@@ -1,7 +1,7 @@
 
 <html>
 <head>
-	<title>IPTV TV por Internet Servidor MOVIE</title>
+	<title>IPTV TV por Internet Servidor CVATT</title>
 	<meta name="robots" content="NOINDEX, NOFOLLOW">
 	<meta content='width=device-width, initial-scale=1' name='viewport'>	
 	<meta http-equiv="Content-Language" content="es" />	
@@ -10,7 +10,9 @@
 </head>
 <link rel="shortcut icon" href="/iptv logo.png" />
 
-
+<video autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="100"/>
+  <source src="intro.mp4" type="video/mp4" />
+	</video/>
 
 <style>
 body {
@@ -133,6 +135,29 @@ iframe {
   
 }
 
+#video_background {
+position: absolute;
+bottom: 0px;
+right: 0px;
+min-width: 100%;
+min-height: 100%;
+width: 1080px;
+height: 720px;
+z-index: -1000;
+overflow: hidden;
+}
+#video_pattern {
+background:#fff;
+position: fixed;
+opacity: 0.8;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 100%;
+z-index: 1;
+}
+
+	
 #canales {
 	
 	z-index: 4;
@@ -225,7 +250,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 	*/
 	
-	fetch("https://raw.githubusercontent.com/galvanoteca2001/FLOW/refs/heads/main/movie.csv?" + getTimestampInSeconds())
+	fetch("https://raw.githubusercontent.com/galvanoteca2001/FLOW/refs/heads/main/cvatt.csv?" + getTimestampInSeconds())
 	.then(response => response.text())
 	.then(data => {
 		let lines = data.split("\n");
@@ -265,7 +290,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 <button role="button" id="boton-inicio" onclick="window.location='https://galvanoteca2001.github.io/embedflow/index.html'"></i>Inicio</button>
 
-<iframe style="overflow: fit-content; display: flex; border: 1px solid #424949;" name="iframe" id="iframe"   autoplay="true" loop="true" scrolling="0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen="true"  src="intro.mp4">
+<iframe style="overflow: fit-content; display: flex; border: 1px solid #424949;" name="iframe" id="iframe"   autoplay="true" loop="true" scrolling="0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen="true"  src="">
 </iframe>
 
 <!--
