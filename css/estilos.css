@@ -49,6 +49,7 @@ z-index: 1;
 	border-radius: 0%;
 	border: 5px solid rgba(0,0,0,0);
 	opacity:  0.6;
+	overflow: hidden;
 }
 
 .borde:hover {
@@ -57,27 +58,32 @@ z-index: 1;
 	transform: scale(1.08);
 	background-image: url("square.png");
 	opacity:  1;
+	overflow: hidden;
 
 }
 
 body {
 	background: var(--fondo);
 	font-family: 'Open Sans', sans-serif;
+	overflow: hidden;
 }
 
 .contenedor {
 	width: 80%;
 	margin: auto;
+	overflow: hidden;
 }
 
 header {
 	padding: 10px 0;
+	overflow: hidden;
 }
 
 header .contenedor {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	overflow: hidden;
 }
 
 header .logotipo {
@@ -85,17 +91,20 @@ header .logotipo {
 	font-weight: normal;
 	color: var(--rojo);
 	font-size: 40px;
+	overflow: hidden;
 }
 
 header nav a {
 	color: #AAA;
 	text-decoration: none;
 	margin-right: 20px;
+	overflow: hidden;
 }
 
 header nav a:hover,
 header nav a.activo {
 	color: #FFF;
+	overflow: hidden;
 }
 
 /* ---- ----- ----- Pelicula Principal ----- ----- ----- */
@@ -106,18 +115,21 @@ header nav a.activo {
 	margin-bottom: 0em;
 	display: flex;
 	align-items: end;
+	overflow: hidden;
 }
 
 .pelicula-principal .contenedor {
 	margin: 0 auto;
 	margin-bottom: 6.25em;
 	text-align: center;
+	overflow: hidden;
 }
 
 .pelicula-principal .titulo {
 	font-weight: 600;
 	font-size: 1.4em;
 	margin-bottom: 0.4em;
+	overflow: hidden;
 }
 
 .pelicula-principal .descripcion {
@@ -127,6 +139,7 @@ header nav a.activo {
 	max-width: 60%;
 	margin-bottom: 1.25em;
 	text-align: center;
+	overflow: hidden;
 }
 
 .pelicula-principal .boton {
@@ -140,15 +153,19 @@ header nav a.activo {
 	transition: .3s ease all;
 	font-size: 1.12em;
 	text-align: center;
+	overflow: hidden;
 }
 
 .pelicula-principal .boton:hover {
 	background: #fff;
 	color: #000;
+	overflow: hidden;
+	
 }
 
 .pelicula-principal .boton i {
 	margin-right: 1.25em;
+	overflow: hidden;
 }
 
 /* ---- ----- ----- Media Queries ----- ----- ----- */
@@ -156,18 +173,22 @@ header nav a.activo {
 	header .logotipo {
 		margin-bottom: 10px;
 		font-size: 30px;
+		overflow: hidden;
 	}
 
 	header .contenedor {
 		flex-direction: column;
 		text-align: center;
+		overflow: hidden;
 	}
 
 	.pelicula-principal {
 		font-size: 14px;
+		overflow: hidden;
 	}
 
 	.pelicula-principal .descripcion {
 		max-width: 100%;
+		overflow: hidden;
 	}
 }
