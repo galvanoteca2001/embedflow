@@ -1,6 +1,4 @@
-:-webkit-scrollbar {
-    display: none;
-}
+
 
 :root {
 	--rojo: #E50914;
@@ -15,7 +13,7 @@
 .icono {
 	width: 160px;
 	height: 160px;
-	overflow: auto;
+	overflow: hidden;
 
 
 }
