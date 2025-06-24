@@ -1,7 +1,7 @@
 
 <html>
 <head>
-	<title>IPTV TV por Internet Servidor CVATT</title>
+	<title>IPTV TV por Internet Servidor TRIMI</title>
 	<meta name="robots" content="NOINDEX, NOFOLLOW">
 	<meta content='width=device-width, initial-scale=1' name='viewport'>	
 	<meta http-equiv="Content-Language" content="es" />	
@@ -250,7 +250,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 	*/
 	
-	fetch("https://raw.githubusercontent.com/galvanoteca2001/FLOW/refs/heads/main/cvatt.csv?" + getTimestampInSeconds())
+	fetch("https://raw.githubusercontent.com/galvanoteca2001/FLOW/refs/heads/main/trimi.csv?" + getTimestampInSeconds())
 	.then(response => response.text())
 	.then(data => {
 		let lines = data.split("\n");
