@@ -1,4 +1,7 @@
-
+:-webkit-scrollbar {
+    	display: none;
+	overflow: hidden;
+}
 
 :root {
 	--rojo: #E50914;
