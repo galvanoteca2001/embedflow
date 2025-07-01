@@ -14,8 +14,8 @@
 	box-sizing: border-box;
 
 .icono {
-	width: 160px;
-	height: 160px;
+	width: 180px;
+	height: 180px;
 	overflow: hidden;
 
 
@@ -130,8 +130,8 @@ header nav a.activo {
 
 .pelicula-principal .titulo {
 	font-weight: 600;
-	font-size: 1.4em;
-	margin-bottom: 0.4em;
+	font-size: 1.6em;
+	margin-bottom: 0.6em;
 	overflow: hidden;
 }
 
